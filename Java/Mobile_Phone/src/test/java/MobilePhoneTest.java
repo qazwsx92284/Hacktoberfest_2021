@@ -46,4 +46,10 @@ class MobilePhoneTest {
         Contact actualContact = mp.queryContact(c0.getName());
         assertEquals(c0, actualContact);
     }
+    
+    @Test
+    public void queryContactNotFoundTest() {
+        Contact notFoundContact = mp.queryContact("Alice");
+        assertNull(notFoundContact);
+    }
 }
