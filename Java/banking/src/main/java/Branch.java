@@ -36,14 +36,11 @@ public class Branch {
     }
 
     public Customer findCustomer(String account_number) {
-        if(customers!=null) {
             for(Customer customer : customers) {
                 if(customer.getAccount_number().equals(account_number)) {
                     return customer;
                 }
             }
-        }
-
         return null;
     }
 
