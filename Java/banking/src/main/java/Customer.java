@@ -8,6 +8,7 @@ public class Customer {
 
     public Customer(String name, String account_number, double initial_transaction) {
         this.name = name;
+        this.account_number = account_number;
         transactions = new ArrayList<Double>();
         transactions.add(initial_transaction);
     }
